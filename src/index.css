@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=IBM+Plex+Sans:wght@300&display=swap');
+
+:root {
+    --dark-blue: #174b84;
+    --dark-pink: #f974a6;
+    --light-blue: #79c8fa;
+    --light-pink: #fca5c6;
+    --white: #fefefe;
+    --header-font: 'IBM Plex Mono', monospace;
+    --body-font: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
