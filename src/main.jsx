@@ -1,10 +1,19 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
+import { backendAPIRoute, frontendUIRoute, helpRoute, homeRoute, learningGuideRoute, profileRoute, reactMERNRoute, deploymentRoute } from './routes.jsx'
+
+const router = createBrowserRouter([
+  homeRoute,
+  learningGuideRoute,
+  helpRoute,
+  profileRoute,
+  frontendUIRoute,
+  backendAPIRoute,
+  reactMERNRoute,
+  deploymentRoute,
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <RouterProvider router={router} />
 )

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faRocket } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
 import './LandingPage.css'
 
 export default function LandingPage() {
@@ -13,13 +14,17 @@ export default function LandingPage() {
 			<div className='landing-page-div-2 landing-page-div'>
 				<div className='landing-page-div-text'>Learning Guide</div>
 				<div className='landing-page-div-arrow-container'>
-					<FontAwesomeIcon icon={faArrowRight} />
+					<Link to='/learning-guide' style={{color: 'white'}}>
+						<FontAwesomeIcon icon={faArrowRight} />
+					</Link>
 				</div>
 			</div>
 			<div className='landing-page-div-3 landing-page-div'>
 				<div className='landing-page-div-text'>Need Help?</div>
 				<div className='landing-page-div-arrow-container'>
-					<FontAwesomeIcon icon={faArrowRight} />
+					<Link to='/help' style={{color: 'white'}}>
+						<FontAwesomeIcon icon={faArrowRight} />
+					</Link>
 				</div>
 			</div>
 			<div className='landing-page-div-4 landing-page-div'>
@@ -28,30 +33,36 @@ export default function LandingPage() {
 					<FontAwesomeIcon icon={faUser} size='4x' />
 				</div>
 				<div className='landing-page-div-arrow-container-long'>
-					<FontAwesomeIcon icon={faArrowRight} />
+					<Link to='/profile' style={{color: 'white'}}>
+						<FontAwesomeIcon icon={faArrowRight} />
+					</Link>
 				</div>
 			</div>
 			<div className='landing-page-div-5 landing-page-div'>
-				<div className='landing-page-div-text'>HTML + CSS + JavaScript</div>
+				<div className='landing-page-div-text'>Frontend UI</div>
 				<div className='landing-page-div-arrow-container'>
-					<FontAwesomeIcon icon={faArrowRight} />
+					<Link to='/frontend-ui' style={{color: 'white'}}>
+						<FontAwesomeIcon icon={faArrowRight} />
+					</Link>
 				</div>
 			</div>
 			<div className='landing-page-div-6 landing-page-div'>
-				<div className='landing-page-div-text'>
-					Express + MongoDB + Mongoose
-				</div>
+				<div className='landing-page-div-text'>Backend API + Node.js</div>
 				<div className='landing-page-div-arrow-container'>
-					<FontAwesomeIcon icon={faArrowRight} />
+					<Link to='/backend-api' style={{color: 'white'}}>
+						<FontAwesomeIcon icon={faArrowRight} />
+					</Link>
 				</div>
 			</div>
 			<div className='landing-page-div-7 landing-page-div'>
-				<div className='landing-page-div-text-long'>React</div>
+				<div className='landing-page-div-text-long'>React + MERN-Stack</div>
 				<div className='landing-page-img-long'>
 					<FontAwesomeIcon icon={faReact} size='4x' />
 				</div>
 				<div className='landing-page-div-arrow-container-long'>
-					<FontAwesomeIcon icon={faArrowRight} />
+					<Link to='/react' style={{color: 'white'}}>
+						<FontAwesomeIcon icon={faArrowRight} />
+					</Link>
 				</div>
 			</div>
 			<div className='landing-page-div-8 landing-page-div'>
@@ -60,7 +71,9 @@ export default function LandingPage() {
 					<FontAwesomeIcon icon={faRocket} size='4x' />
 				</div>
 				<div className='landing-page-div-arrow-container-long'>
-					<FontAwesomeIcon icon={faArrowRight} />
+					<Link to='/deployment' style={{color: 'white'}}>
+						<FontAwesomeIcon icon={faArrowRight} />
+					</Link>
 				</div>
 			</div>
 		</div>
