@@ -13,3 +13,10 @@
 body {
     margin: 0;
 }
+
+.header-text {
+    font-family: var(--header-font);
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin: 0;
+}
